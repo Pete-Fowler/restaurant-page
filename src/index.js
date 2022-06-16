@@ -1,1 +1,5 @@
-alert('webpack sucks');
+import home from './home.js';
+
+const content = document.querySelector('#content');
+
+content.appendChild(home);
