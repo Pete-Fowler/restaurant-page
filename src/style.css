@@ -7,11 +7,20 @@
 }
 
 #header {
-    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    height: 100px;
     width: 100vw;
-    position: sticky;
-    background-color: black;
-    opacity: .7;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#header h1 {
+    font-size: 3rem;
+    margin: 2px;
 }
 
 #home {
@@ -22,14 +31,9 @@
     min-width: 100vw;
     min-height: 90vh;
     background: url('./assets/images/phoBowl.jpg');
+    background-repeat: no-repeat;
     background-size: 100vw auto;
 }
-
-h1, h2 {
-    margin: 0px;
-    background-color: rgba(0, 0, 0, .7);
-}
-
 
 #bowl {
     width: 400px;
