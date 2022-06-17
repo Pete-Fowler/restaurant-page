@@ -1,4 +1,5 @@
-import home from './home';
+import home from './assets/modules/home';
+import './style.css';
 
 const content = document.querySelector('#content');
 
