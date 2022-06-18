@@ -1,9 +1,14 @@
+body {
+    margin: 0px;
+}
+
 #content {
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #header {
@@ -54,7 +59,7 @@
 }
 
 #home {
-    color: orange;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,4 +69,11 @@
     width: 100vw;
     height: 90vh;
     object-fit: cover;
+}
+
+#about {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    width: 60vw;
+    margin: 75px;
 }
