@@ -11,7 +11,6 @@ const btns = document.createElement('div');
 btns.id = 'btn-group';
 
 const homeBtn = document.createElement('button');
-homeBtn.setAttribute('style', 'id="home" class=".btn"'); // fix id and class
 homeBtn.classList.add('btn');
 homeBtn.id = 'home-btn';
 homeBtn.textContent = 'Home';
@@ -20,5 +19,4 @@ btns.appendChild(homeBtn);
 el.appendChild(btns);
 
 return el;
-
 }
