@@ -9,6 +9,8 @@ el.appendChild(h1);
 
 const homeBtn = document.createElement('button');
 homeBtn.setAttribute('style', 'id="home" class=".btn"'); // fix id and class
+homeBtn.classList.add('btn');
+homeBtn.id = 'home-btn';
 homeBtn.textContent = 'Home';
 el.appendChild(homeBtn);
 
