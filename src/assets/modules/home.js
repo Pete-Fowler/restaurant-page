@@ -2,6 +2,8 @@
 import bowl1 from '../images/phoBowl.jpg';
 import apps1 from '../images/apps.jpg';
 import greenApp1 from '../images/greenApp.jpg';
+import bahnMi1 from '../images/bahnMi.jpg';
+import pho31 from '../images/pho3.jpg';
 
 export default function home() {
     
@@ -56,6 +58,31 @@ export default function home() {
             
             box2.appendChild(greenApp);
             menuBox.appendChild(box2);
+
+        const box3 = document.createElement('div');
+        box3.classList.add('box');
+            
+            const bahnMi = new Image();
+            bahnMi.src = bahnMi1;
+            bahnMi.id = 'bahn-mi';
+            bahnMi.setAttribute('alt', 'Picture of bahn-mi sandwich');
+            bahnMi.classList.add('photo');
+            
+            box3.appendChild(bahnMi);
+            menuBox.appendChild(box3);
+
+        const box4 = document.createElement('div');
+        box4.classList.add('box');
+            
+            const pho3 = new Image();
+            pho3.src = pho31;
+            pho3.id = 'pho3';
+            pho3.setAttribute('alt', 'Picture of pho soup');
+            pho3.classList.add('photo');
+            
+            box4.appendChild(pho3);
+            menuBox.appendChild(box4);
+    
 
     el.appendChild(menuBox);
 
