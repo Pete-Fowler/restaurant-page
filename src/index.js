@@ -1,9 +1,7 @@
-import header from './assets/modules/header';
-import home from './assets/modules/home';
+import loadPage from './assets/modules/loadPage';
 import './style.css';
 
-const content = document.querySelector('#content');
+loadPage();
 
-content.appendChild(header());
-content.appendChild(home());
+
 
