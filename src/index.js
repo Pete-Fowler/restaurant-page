@@ -7,22 +7,38 @@ import './style.css';
 
 initPage();
 
-const page = ((e) => {
-    const load = () => {
-        const content = document.querySelector('#content');
+const page = (() => {
+    const content = document.querySelector('#content');
+    
+    const init = () => {
         content.textContent = '';
-
-
+        content.appendChild(header());
     }
-    return {load};
+    const loadHome = () => {
+        init();
+        content.appendChild(home());
+    }
+    const loadMenu = () => {
+        init();
+        content.appendChild(menu());
+    }
+    const loadContact = () => {
+        init();
+        content.appendChild(contact());
+    }
+
+    return {loadHome, loadMenu, loadContact};
 })();
 
-const listeners = ((e) => {
+const listeners = (() => {
     const home = document.querySelector('#home-btn');
-    home.addEventListener('click', initPage);
+    home.addEventListener('click', page.loadHome);
 
-    
+    const menu = document.querySelector('#menu-btn');
+    menu.addEventListener('click', page.loadMenu);
 
+    const contact = document.querySelector('#contact-btn');
+    contact.addEventListener('click', page.loadContact);
 })();
 
 

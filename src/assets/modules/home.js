@@ -6,7 +6,6 @@ import pho31 from '../images/pho3.jpg';
 import interior1 from '../images/interior.jpg';
 
 export default function home() {
-    
     const el = document.createElement('div');
     el.id = 'home';
 
