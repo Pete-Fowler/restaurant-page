@@ -1,1 +1,3 @@
-alert('contact loaded');
+export default function contact() {
+    alert('contact loaded');
+}

@@ -4,7 +4,7 @@ const el = document.createElement('div');
 el.id = 'header';
 
 const h1 = document.createElement('h1');
-h1.textContent = `Is This Pho Real?`;
+h1.textContent = `Is This Phở Real?`;
 el.appendChild(h1);
 
 const btns = document.createElement('div');

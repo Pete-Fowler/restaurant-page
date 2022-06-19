@@ -14,7 +14,7 @@ export default function home() {
     const bowl = new Image();
     bowl.src = bowl1;
     bowl.id = 'bowl';
-    bowl.setAttribute('alt', 'Picture of bowl of pho');
+    bowl.setAttribute('alt', 'Picture of bowl of Phở');
     el.appendChild(bowl);
 
     // About paragraph
@@ -23,10 +23,12 @@ export default function home() {
     const about = document.createElement('div');
     about.id = 'about';
 
-    about.textContent = '"Is This Pho Real?" Is what our customers find \
-    themselves asking after each visit. Southern style pho with fresh local \
-    ingredients, emphasizing lime and Thai basil are what we are all about. \
-    Our restaurant is 100% vegan.'
+    about.textContent = 'Customers ask "Is This Phở Real?" after each visit. \
+    Southern style phở with fresh local ingredients, emphasizing lime and Thai \
+    basil are what we are all about. Our restaurant is 100% vegan, as owners \
+    Phan Văn Trường and Nguyễn Thị Minh were shipwrecked off the coast of \
+    Vietnam, and rode an exceptionally helpful whale several thousand miles on \
+    an aquatic odyssey to Los Angeles.'
 
     aboutBox.appendChild(about);
     el.appendChild(aboutBox);
@@ -104,6 +106,13 @@ export default function home() {
     interior.id = 'interior';
     interior.setAttribute('alt', 'Picture of restaurant interior');
     el.appendChild(interior);
+
+    // Photo credits
+    const credits = document.createElement('div');
+    credits.id= 'credits';
+    credits.textContent = 'Images from pexels.com by photographers: \
+    Flo Dahm Dương Nhân, Jer Chung, and Asad'
+    el.appendChild(credits);
 
     return el;
 }
