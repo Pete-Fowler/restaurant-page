@@ -115,3 +115,23 @@ body {
 #credits {
     font-size: 1.5rem;
 }
+
+/* Contact page */
+#exterior {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#contact-box {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, .6);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(72, 72, 72);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
