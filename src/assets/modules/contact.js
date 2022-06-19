@@ -2,6 +2,7 @@ import exterior1 from '../images/exterior.jpg';
 
 export default function contact() {
     
+    // Main div element to be added to DOM
     const el = document.createElement('div');
     el.id = 'contact';
 
@@ -11,8 +12,7 @@ export default function contact() {
     exterior.id = 'exterior'
     el.appendChild(exterior);
 
-
-    // Hours / address / phone / email
+    // Box with hours / address / phone / email
     const contactBox = document.createElement('div');
     contactBox.id = 'contact-box';
 
@@ -37,6 +37,14 @@ export default function contact() {
     contactBox.appendChild(address);
 
     el.appendChild(contactBox);
+
+    // Photo credit
+    const credits = document.createElement('a');
+    credits.id = 'credits';
+    credits.textContent = 'Image: www.pexels.com';
+    credits.setAttribute('href', 'https://www.pexels.com/photo/young-female-employee-in-uniform-placing-signboard-against-cafe-4349944/');
+    credits.setAttribute('title', 'www.pexels.com young-female-employee-in-uniform-placing-signboard-against-cafe');
+    el.appendChild(credits);
     
     return el;
 }

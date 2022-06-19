@@ -107,10 +107,12 @@ export default function home() {
     el.appendChild(interior);
 
     // Photo credits
-    const credits = document.createElement('div');
-    credits.id= 'credits';
-    credits.textContent = 'Images from pexels.com by photographers: \
-    Flo Dahm Dương Nhân, Jer Chung, and Asad'
+    const credits = document.createElement('a');
+    credits.id = 'credits';
+    credits.textContent = 'Images from www.pexels.com by photographers: Flo \
+    Dahm Dương Nhân, Jer Chung, and Asad';
+    credits.setAttribute('href', 'https://www.pexels.com/');
+    credits.setAttribute('title', 'www.pexels.com');
     el.appendChild(credits);
 
     return el;
