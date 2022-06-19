@@ -1,9 +1,9 @@
-
 import bowl1 from '../images/phoBowl.jpg';
 import apps1 from '../images/apps.jpg';
 import greenApp1 from '../images/greenApp.jpg';
 import bahnMi1 from '../images/bahnMi.jpg';
 import pho31 from '../images/pho3.jpg';
+import interior1 from '../images/interior.jpg';
 
 export default function home() {
     
@@ -22,12 +22,12 @@ export default function home() {
     aboutBox.id = 'about-box';
     const about = document.createElement('div');
     about.id = 'about';
-    
+
     about.textContent = '"Is This Pho Real?" Is what our customers find \
     themselves asking after each visit. Southern style pho with fresh local \
     ingredients, emphasizing lime and Thai basil are what we are all about. \
     Our restaurant is 100% vegan.'
-    
+
     aboutBox.appendChild(about);
     el.appendChild(aboutBox);
 
@@ -82,9 +82,28 @@ export default function home() {
             
             box4.appendChild(pho3);
             menuBox.appendChild(box4);
-    
 
     el.appendChild(menuBox);
+
+    // Location paragraph
+    const locationBox = document.createElement('div');
+    locationBox.id = 'location-box';
+    const location = document.createElement('div');
+    location.id = 'location';
+
+    location.textContent = 'Located in the Highlands neighborhood near \
+    downtown Denver, our modern, minimalistic space is unpretentious and \
+    welcoming to all.'
+
+    locationBox.appendChild(location);
+    el.appendChild(locationBox);
+
+    // Interior image
+    const interior = new Image();
+    interior.src = interior1;
+    interior.id = 'interior';
+    interior.setAttribute('alt', 'Picture of restaurant interior');
+    el.appendChild(interior);
 
     return el;
 }
