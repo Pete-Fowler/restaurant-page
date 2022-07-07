@@ -1,3 +1,5 @@
+<a href='https://pete-fowler.github.io/restaurant-page/'>Live page</a>
+
 This project was an exercise in using separate JS modules and webpack to create
 a finished restaurant website. Webpack seemed a bit unpleasant to learn as a 
 newer developer with its somewhat steep learning curve and voluminous 
